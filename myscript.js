@@ -32,7 +32,7 @@ function box_size(rows, cols, dimension) {
 
 
 // Add event listener when the dimiension button is clicked
-let dimension = document.querySelector("#btn")
+let dimension = document.querySelector("#btn-size")
 dimension.addEventListener("click", () => {
     let size = document.querySelector("#grid-size");
     container.innerHTML = null;
@@ -52,5 +52,14 @@ dimension.addEventListener("click", () => {
 
 
 
+// Reset the dimension
+let reset = document.querySelector("#btn-reset");
+reset.addEventListener("click", () => {
+    container.innerHTML = null;
+    box_size(16,16,40);
+})
+
+
+
 // Default box size
-box_size(16,16);
+box_size(16,16,40);
