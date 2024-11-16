@@ -1,3 +1,7 @@
+.size {
+    margin-bottom: 20px;
+}
+
 #container {
     display: flex;
     flex-wrap: wrap; /* Allows flex automatiaclly wraps to the next line*/
